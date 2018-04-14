@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.polytech.legue.tondeusebluetooth.MainActivity">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:id="@+id/forward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="AVANCER" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Avancer&#10;GAUCHE"
+        android:id="@+id/forward_left_btn"
+        android:layout_below="@+id/forward_btn"
+        android:layout_toLeftOf="@+id/forward_btn"
+        android:layout_toStartOf="@+id/forward_btn" />
+
+    <Button
+        android:id="@+id/forward_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/forward_btn"
+        android:layout_toEndOf="@+id/forward_btn"
+        android:layout_toRightOf="@+id/forward_btn"
+        android:text="Avancer&#10;DROITE" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="RECULER"
+        android:id="@+id/reverse_btn"
+        android:layout_below="@+id/forward_left_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/bluetooth_connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/forward_right_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/forward_right_btn"
+        android:layout_marginBottom="22dp"
+        android:text="Connexion Tondeuse Bluetooth" />
+
+    <Button
+        android:id="@+id/mode_pilote"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mode_autonome"
+        android:text="Mode Piloté" />
+
+    <Button
+        android:id="@+id/mode_autonome"
+        android:layout_width="150dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/reverse_btn"
+        android:text="Mode autonomone" />
+
+
+    <Button
+        android:id="@+id/start_coupe_btn"
+        android:layout_width="150dp"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reverse_btn"
+        android:text="démarrer coupe" />
+
+    <Button
+        android:id="@+id/stop_coupe_btn"
+        android:layout_width="150dp"
+
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/start_coupe_btn"
+        android:layout_alignRight="@+id/start_coupe_btn"
+        android:layout_below="@+id/start_coupe_btn"
+        android:text="stopper coupe" />
+
+</RelativeLayout>
